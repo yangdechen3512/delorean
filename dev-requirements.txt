@@ -4,39 +4,84 @@
 #
 #    pip-compile dev-requirements.in
 #
-alabaster==0.7.6          # via sphinx
-appnope==0.1.0            # via ipython
-astroid==1.4.1            # via pylint
-babel==2.1.1              # via sphinx
-click==6.2                # via pip-tools
-colorama==0.3.3           # via pylint
+alabaster==0.7.6
+    # via sphinx
+astroid==1.4.1
+    # via pylint
+babel==2.1.1
+    # via sphinx
+backcall==0.2.0
+    # via ipython
+click==6.2
+    # via pip-tools
+colorama==0.3.3
+    # via pylint
 coverage==4.0.3
-decorator==4.0.4          # via ipython, traitlets
-docutils==0.12            # via sphinx
-first==2.0.1              # via pip-tools
-funcsigs==0.4             # via mock
-gnureadline==6.3.3        # via ipython
-ipython-genutils==0.1.0   # via traitlets
-ipython==4.0.1
-jinja2==2.8               # via sphinx
-lazy-object-proxy==1.2.1  # via astroid
-markupsafe==0.23          # via jinja2
+    # via -r dev-requirements.in
+decorator==4.0.4
+    # via ipython
+docutils==0.12
+    # via sphinx
+first==2.0.1
+    # via pip-tools
+ipython==7.16.3
+    # via -r dev-requirements.in
+jedi==0.17.2
+    # via ipython
+jinja2==2.8
+    # via sphinx
+lazy-object-proxy==1.2.1
+    # via astroid
+markupsafe==0.23
+    # via jinja2
 mock==1.3.0
+    # via -r dev-requirements.in
 nose==1.3.7
-path.py==8.1.2            # via pickleshare
-pbr==1.8.1                # via mock
+    # via -r dev-requirements.in
+parso==0.7.1
+    # via jedi
+path.py==8.1.2
+    # via pickleshare
+pbr==1.8.1
+    # via mock
 pep8==1.6.2
-pexpect==4.0.1            # via ipython
-pickleshare==0.5          # via ipython
+    # via -r dev-requirements.in
+pexpect==4.0.1
+    # via ipython
+pickleshare==0.5
+    # via ipython
 pip-tools==1.3.0
-ptyprocess==0.5           # via pexpect
-pygments==2.0.2           # via sphinx
+    # via -r dev-requirements.in
+prompt-toolkit==3.0.24
+    # via ipython
+ptyprocess==0.5
+    # via pexpect
+pygments==2.0.2
+    # via
+    #   ipython
+    #   sphinx
 pylint==1.5.1
-pytz==2015.7              # via babel
-simplegeneric==0.8.1      # via ipython
-six==1.10.0               # via astroid, mock, pip-tools, pylint, sphinx
-snowballstemmer==1.2.0    # via sphinx
-sphinx-rtd-theme==0.1.9   # via sphinx
+    # via -r dev-requirements.in
+pytz==2015.7
+    # via babel
+six==1.10.0
+    # via
+    #   astroid
+    #   mock
+    #   pip-tools
+    #   pylint
+    #   sphinx
+snowballstemmer==1.2.0
+    # via sphinx
 sphinx==1.3.3
-traitlets==4.0.0          # via ipython
-wrapt==1.10.6             # via astroid
+    # via
+    #   -r dev-requirements.in
+    #   sphinx-rtd-theme
+sphinx-rtd-theme==0.1.9
+    # via sphinx
+traitlets==5.1.1
+    # via ipython
+wcwidth==0.2.5
+    # via prompt-toolkit
+wrapt==1.10.6
+    # via astroid
